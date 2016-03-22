@@ -40,8 +40,7 @@
     "express-session" : "1.x.x",
     "body-parser"     : "1.x.x",
 
-    "koa"             : "1.x.x",
-    "koa-route"       : "2.x.x",
+    "koa-convert"     : "1.2.x",
     "thunkify"        : "2.x.x",
 
     "koa-session"     : "3.x.x",
