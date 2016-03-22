@@ -6,7 +6,7 @@ var request = require('request')
 var koa = require('koa')
   , session = require('koa-session')
   , bodyParser = require('koa-bodyparser')
-  , route = require('koa-route')
+  , router = require('koa-router')
   , mount = require('koa-mount')
   , koaqs = require('koa-qs')
 var Grant = require('../../../').koa()
@@ -15,7 +15,7 @@ var Grant = require('../../../').koa()
 describe('session - koa', function () {
   function url (path) {
     var c = config.server
-    return c.protocol + '://' + c.host + path
+    return c.protocol + '://' + c.host + (c.path || '') + path
   }
 
   var config = {
